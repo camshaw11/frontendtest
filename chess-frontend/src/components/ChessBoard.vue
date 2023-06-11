@@ -90,19 +90,21 @@ const highlightSquare = (e) => {
 <style scoped>
 .board {
   display: grid;
-  grid-gap: 1px;
   grid-template-columns: repeat(8, [col] 10vw);
   grid-template-rows: repeat(8, [row] 10vw);
   justify-content: center;
   align-content: center;
+  border: 1px solid white;
 }
 
 .dark {
   background-color: var(--dark);
+  border: 1px solid white;
 }
 
 .light {
   background-color: var(--light);
+  border: 1px solid white;
 }
 .highlighted {
   background-color: var(--highlight);

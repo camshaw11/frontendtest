@@ -40,7 +40,7 @@ const handleClickedSquareIdsUpdate = (data) => {
 }
 
 .sidebar {
-  border: 2px solid #155263;
+  border: 2px solid var(--dark);
   padding: 1em;
   margin-top: 1em;
   margin-right: 0.4em;
