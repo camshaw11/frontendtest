@@ -33,12 +33,17 @@ const handleClickedSquareIdsUpdate = (data) => {
 }
 .container {
   width: 100%;
-  /* padding: 1em; */
+  height: 100%;
   display: flex;
   flex-flow: row wrap;
-}
+  justify-content: center;
+  }
+
+
+
 .sidebar {
-  border: 2px solid green;
+  border: 2px solid #155263;
+  padding: 1em;
   margin-top: 1em;
   margin-right: 0.4em;
   margin-left: 0.4em;
@@ -47,13 +52,19 @@ const handleClickedSquareIdsUpdate = (data) => {
   display: flex;
   background-color: white;
   overflow-y: auto;
-  white-space: nowrap;
 }
 
 /* styles for desktop screens */
 @media only screen and (min-width: 1024px) {
   .container {
     flex-flow: nowrap;
+    justify-content: center;
+  }
+  .sidebar {
+    height: auto;
+    max-height: 575px;
+    width: 30%; 
+    margin-top: 0;
   }
 }
 </style>

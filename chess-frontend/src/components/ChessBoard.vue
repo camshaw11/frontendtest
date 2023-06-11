@@ -94,21 +94,19 @@
   grid-gap: 0;
   grid-template-columns: repeat(8, [col] 10vw);
   grid-template-rows: repeat(8, [row] 10vw);
-  width: 100%;
   justify-content: center;
   align-content: center;
-  margin: 0 auto;
 }
 
 .dark {
-  background-color: #00a303;
+  background-color: var(--dark);
 }
 
 .light {
-  background-color: aquamarine;
+  background-color: var(--light);
 }
 .highlighted {
-  background-color: rgba(255, 0, 0, 0.766);
+  background-color: var(--highlight);
 }
 
 /* styles for desktop screens */
@@ -116,7 +114,7 @@
   .board {
     grid-template-columns: repeat(8, [col] 5vw);
     grid-template-rows: repeat(8, [row] 5vw);
-    width: 50%;
+    /* width: 50%; */
   }
 }
 </style>
