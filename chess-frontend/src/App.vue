@@ -1,5 +1,13 @@
 <script setup>
 import ChessBoard from './components/ChessBoard.vue'
+
+import { ref } from 'vue'
+
+const clickedSquareIds = ref([])
+
+const handleClickedSquareIdsUpdate = (data) => {
+  clickedSquareIds.value = data;
+}
 </script>
 
 <template>
@@ -8,8 +16,12 @@ import ChessBoard from './components/ChessBoard.vue'
   </header>
   <main>
     <div class="container">
-      <ChessBoard />
-      <aside class="sidebar"></aside>
+      <ChessBoard @updateClickedSquareIds="handleClickedSquareIdsUpdate"/>
+      <aside class="sidebar">
+        <ol>
+          <li v-for="id in clickedSquareIds" :key="id">{{ id }}</li>
+        </ol>
+      </aside>
     </div>
   </main>
 </template>
@@ -30,10 +42,12 @@ import ChessBoard from './components/ChessBoard.vue'
   margin-top: 1em;
   margin-right: 0.4em;
   margin-left: 0.4em;
-  min-height: 8em;
+  height: 8em;
   width: 100%;
   display: flex;
   background-color: white;
+  overflow-y: auto;
+  white-space: nowrap;
 }
 
 /* styles for desktop screens */
