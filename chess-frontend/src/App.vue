@@ -30,6 +30,7 @@ const handleClickedSquareIdsUpdate = (data) => {
 .title {
   margin-bottom: 0.5em;
 }
+
 .container {
   width: 100%;
   height: 100%;
@@ -59,7 +60,7 @@ const handleClickedSquareIdsUpdate = (data) => {
   }
   .sidebar {
     height: auto;
-    max-height: 575px;
+    max-height: 584px;
     width: 20%;
     margin-top: 0;
   }

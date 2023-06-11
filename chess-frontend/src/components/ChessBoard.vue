@@ -90,7 +90,7 @@ const highlightSquare = (e) => {
 <style scoped>
 .board {
   display: grid;
-  grid-gap: 0;
+  grid-gap: 1px;
   grid-template-columns: repeat(8, [col] 10vw);
   grid-template-rows: repeat(8, [row] 10vw);
   justify-content: center;
