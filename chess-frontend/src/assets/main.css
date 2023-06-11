@@ -7,10 +7,17 @@
   font-weight: normal;
 }
 
-h1, h2, h3, li, p, a {
-  color: var(--dark)
+h1,
+h2,
+h3,
+li,
+p,
+a {
+  color: var(--dark);
 }
 
-html, body, main {
+html,
+body,
+main {
   height: 100%;
 }

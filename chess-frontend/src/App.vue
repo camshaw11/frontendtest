@@ -6,7 +6,7 @@ import { ref } from 'vue'
 const clickedSquareIds = ref([])
 
 const handleClickedSquareIdsUpdate = (data) => {
-  clickedSquareIds.value = data;
+  clickedSquareIds.value = data
 }
 </script>
 
@@ -16,7 +16,7 @@ const handleClickedSquareIdsUpdate = (data) => {
   </header>
   <main>
     <div class="container">
-      <ChessBoard @updateClickedSquareIds="handleClickedSquareIdsUpdate"/>
+      <ChessBoard @updateClickedSquareIds="handleClickedSquareIdsUpdate" />
       <aside class="sidebar">
         <ol>
           <li v-for="id in clickedSquareIds" :key="id">{{ id }}</li>
@@ -27,7 +27,6 @@ const handleClickedSquareIdsUpdate = (data) => {
 </template>
 
 <style scoped>
-
 .title {
   margin-bottom: 0.5em;
 }
@@ -37,9 +36,7 @@ const handleClickedSquareIdsUpdate = (data) => {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  }
-
-
+}
 
 .sidebar {
   border: 2px solid #155263;
@@ -63,7 +60,7 @@ const handleClickedSquareIdsUpdate = (data) => {
   .sidebar {
     height: auto;
     max-height: 575px;
-    width: 30%; 
+    width: 20%;
     margin-top: 0;
   }
 }

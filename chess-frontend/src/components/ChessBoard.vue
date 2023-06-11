@@ -1,23 +1,22 @@
 <script setup>
-  import { ref, defineEmits } from 'vue';
-  
-  const emit = defineEmits(['updateClickedSquareIds'])
+import { ref, defineEmits } from 'vue'
 
-  const clickedSquareIds = ref([]);
+const emit = defineEmits(['updateClickedSquareIds'])
 
-  const highlightSquare = (e) => {
-    const clickedSquare = e.target
-    // only target children
-    if (clickedSquare.classList.contains('square')) {
-      // toggle highlighted colour
-      clickedSquare.classList.toggle('highlighted')
-      // add new values to array
-      clickedSquareIds.value.push(clickedSquare.id)
-      // emit data to parent 
-      emit('updateClickedSquareIds', clickedSquareIds.value)
-    }
+const clickedSquareIds = ref([])
+
+const highlightSquare = (e) => {
+  const clickedSquare = e.target
+  // only target children
+  if (clickedSquare.classList.contains('square')) {
+    // toggle highlighted colour
+    clickedSquare.classList.toggle('highlighted')
+    // add new values to array
+    clickedSquareIds.value.push(clickedSquare.id)
+    // emit data to parent
+    emit('updateClickedSquareIds', clickedSquareIds.value)
   }
-
+}
 </script>
 <template>
   <div class="board" @click="highlightSquare">
@@ -114,7 +113,6 @@
   .board {
     grid-template-columns: repeat(8, [col] 5vw);
     grid-template-rows: repeat(8, [row] 5vw);
-    /* width: 50%; */
   }
 }
 </style>
