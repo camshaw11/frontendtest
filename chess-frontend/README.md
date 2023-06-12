@@ -1,6 +1,6 @@
 # chess-frontend
 
-This template should help get you started developing with Vue 3 in Vite.
+View live demo here: [https://heroic-melba-a51444.netlify.app/](https://heroic-melba-a51444.netlify.app/)
 
 ## Recommended IDE Setup
 
