@@ -106,6 +106,7 @@ const highlightSquare = (e) => {
   background-color: var(--light);
   border: 1px solid white;
 }
+
 .highlighted {
   background-color: var(--highlight);
 }

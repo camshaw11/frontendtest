@@ -58,9 +58,10 @@ const handleClickedSquareIdsUpdate = (data) => {
     flex-flow: nowrap;
     justify-content: center;
   }
+
   .sidebar {
     height: auto;
-    max-height: 584px;
+    max-height: 580px;
     width: 20%;
     margin-top: 0;
   }
